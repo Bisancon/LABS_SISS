@@ -1,0 +1,72 @@
+[
+ {
+  "n": 1,
+  "case": "GET /health",
+  "expected": "200",
+  "got": 200,
+  "ok": true
+ },
+ {
+  "n": 2,
+  "case": "GET /model-info",
+  "expected": "200",
+  "got": 200,
+  "ok": true
+ },
+ {
+  "n": 3,
+  "case": "корректный POST /predict",
+  "expected": "200/201",
+  "got": 201,
+  "ok": true
+ },
+ {
+  "n": 4,
+  "case": "area_ha = -100",
+  "expected": "422",
+  "got": 422,
+  "ok": true
+ },
+ {
+  "n": 5,
+  "case": "неизвестный регион",
+  "expected": "400",
+  "got": 400,
+  "ok": true
+ },
+ {
+  "n": 6,
+  "case": "существующий request_id",
+  "expected": "200",
+  "got": 200,
+  "ok": true
+ },
+ {
+  "n": 7,
+  "case": "неизвестный request_id",
+  "expected": "404",
+  "got": 404,
+  "ok": true
+ },
+ {
+  "n": 8,
+  "case": "limit = 2",
+  "expected": "200",
+  "got": 200,
+  "ok": true
+ },
+ {
+  "n": 9,
+  "case": "risk_level = high",
+  "expected": "200",
+  "got": 200,
+  "ok": true
+ },
+ {
+  "n": 10,
+  "case": "limit = -5",
+  "expected": "422",
+  "got": 422,
+  "ok": true
+ }
+]
